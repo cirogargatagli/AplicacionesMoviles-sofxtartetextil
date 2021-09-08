@@ -4,18 +4,27 @@
 
 html {
     height: 100vh;
-}
+    width: 100%;
+  }
+
+body {
+    width: 100%;
+    margin: 0;
+  }
 
 a {
     text-decoration: none;
 }
 
 header {
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 15%;
     align-items: center;
     display: flex;
     box-shadow: 0 5px 2px -2px rgba(192, 32, 23, 1);
+    background-color: white;
 }
 header h1 {
     text-align: center;
@@ -23,10 +32,10 @@ header h1 {
 }
 
 .logo-header {
-    margin-left: 2%;
+    margin-left: 3.5%;
     margin-bottom: 1%;
     margin-top: 0.5%;
-    height: 3%;
+    height: 80%;
     width: 4%;
 }
 
@@ -35,16 +44,18 @@ header h1 {
     height: 100%;
 }
 
-/* main {    
-    width: 100%;
-    height: 75%;
+main {  
+    margin-top: 7.5%;  
     display: flex;
-    flex: wrap;
-} */
+    width: 100%;
+    height: 100%;
+}
 
-.menu {    
+.menu {
+    position: fixed;
+    left: 0;
     padding-top: 2%;
-    width: 17%;
+    width: 12%;
     padding-bottom: 15%;
     box-shadow: 3.8px 0 0px -3px rgba(192, 32, 23, 1);
 }
@@ -56,13 +67,64 @@ header h1 {
 }
 
 .item-menu-enlace{
+    font-weight: bolder;
     color: black;
     padding-top: 7%;
     padding-bottom: 7%;
     padding-left: 15%;
-    padding-right: 50%;
+    padding-right: 50%;    
 }
 
 .item-menu-enlace:hover{
     background-color: rgba(0, 0, 0, 0.05);
 }
+
+.container{
+    margin-left: 12%;
+    width: 100%;
+    height: 100%;
+    padding-left: 2%;
+}
+
+.section{
+    width: 100%;
+    margin-top: 5%;
+}
+.articulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.articulo {
+    margin: 1rem 2%;
+    transition: all 0.4s ease;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border-color: #34495e;
+    overflow: hidden;
+    background-color: white;
+    width: 25%;
+    height: 25rem;
+}
+
+footer {
+    margin-top: 0.5%;
+    background-color: rgba(0, 0, 0, 0.103);
+    position: relative;
+    bottom: 0;    
+    height: 4rem;
+    width: 98%;
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    padding-left: 2%;   
+}
+
+.desarrollador{
+    text-decoration: none;
+    color: rgb(5, 154, 223);
+    padding-left: 0.2%;    
+}
+
