@@ -2,16 +2,19 @@
     font-family: 'Roboto', sans-serif
 }
 
+html {
+    height: 100vh;
+}
+
 a {
     text-decoration: none;
 }
 
 header {
-    position: fixed;
     width: 100%;
     height: 15%;
     align-items: center;
-    display: inline-flex;
+    display: flex;
     box-shadow: 0 5px 2px -2px rgba(192, 32, 23, 1);
 }
 header h1 {
@@ -21,10 +24,45 @@ header h1 {
 
 .logo-header {
     margin-left: 2%;
-    height: 95%;
+    margin-bottom: 1%;
+    margin-top: 0.5%;
+    height: 3%;
+    width: 4%;
 }
 
 .imagen-logo{
     width: 100%;
     height: 100%;
+}
+
+/* main {    
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex: wrap;
+} */
+
+.menu {    
+    padding-top: 2%;
+    width: 17%;
+    padding-bottom: 15%;
+    box-shadow: 3.8px 0 0px -3px rgba(192, 32, 23, 1);
+}
+
+.item-menu{
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.item-menu-enlace{
+    color: black;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 15%;
+    padding-right: 50%;
+}
+
+.item-menu-enlace:hover{
+    background-color: rgba(0, 0, 0, 0.05);
 }
