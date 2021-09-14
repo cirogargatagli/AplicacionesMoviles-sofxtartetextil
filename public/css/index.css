@@ -52,8 +52,8 @@ header h1 {
 .imagen-titulo {
     display: block;
     float: right;
-    height: 60%;
-    margin-left: 40px;
+    height: 40%;
+    margin-left: 2%;
 }
 
 .menu {
@@ -83,7 +83,7 @@ header h1 {
 }
 
 .item-menu-enlace:hover{
-    font-size: 23px;
+    font-size: 1.3rem;
     background-color: rgba(0, 0, 0, 0.03);
 }
 
@@ -91,7 +91,7 @@ main {
     float: right;
     width: 85%;
     height: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 1.5%;
     box-shadow: 1px 2px 1px 1px rgb(110, 110, 110);
 }
 
@@ -170,21 +170,36 @@ main {
 }
 
 footer {
-    margin-top: 0.5%;
+    font-weight: bolder;
+    font-size: 0.8rem;
     background-color: rgba(0, 0, 0, 0.103);
-    position: relative;
-    bottom: 0;    
+    bottom: 0;
     height: 4rem;
     width: 98%;
     display: flex;
-    text-align: center;
     align-items: center; 
-    padding-left: 2%;   
+    padding-left: 2%;
 }
-
-.desarrollador{
+.desarrollador{    
     text-decoration: none;
     color: rgb(5, 154, 223);
-    padding-left: 0.2%;    
+    padding-left: 0.2%;
 }
+
+.contacto{
+    display: flex;
+    height: 43%;    
+    width: 100px;
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+.icono{
+    display: block;
+    height: 100%;
+    width: 30px;
+    margin-left: 15%;
+}
+
+
 
