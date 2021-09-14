@@ -3,12 +3,12 @@
 }
 
 html {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
   }
 
 body {
-    width: 100%;
+    min-height: 100vh;
     margin: 0;
   }
 
@@ -59,7 +59,7 @@ header h1 {
 .menu {
     float: left;
     height: 100%;
-    width: 15%;
+    width: 14%;
     margin-top: 0.6%;
 }
 
@@ -88,10 +88,13 @@ header h1 {
 }
 
 main {  
+    min-height: 82vh;
+    margin-right: 1%;
     float: right;
     width: 85%;
     height: 100%;
     margin-bottom: 1.5%;
+    border-radius: 1%;
     box-shadow: 1px 2px 1px 1px rgb(110, 110, 110);
 }
 
