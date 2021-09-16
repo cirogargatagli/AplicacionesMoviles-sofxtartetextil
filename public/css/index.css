@@ -88,7 +88,7 @@ header h1 {
 }
 
 main {  
-    min-height: 82vh;
+    min-height: 80vh;
     margin-right: 1%;
     float: right;
     width: 85%;
@@ -173,6 +173,7 @@ main {
     color: rgb(80, 80, 80);
 }
 
+
 footer {
     font-weight: bolder;
     font-size: 0.8rem;
@@ -205,5 +206,27 @@ footer {
     margin-left: 15%;
 }
 
-
-
+.calificacion {
+    width: 45%;
+    direction: rtl;
+}  
+.calificacion label {    
+    font-size: 22px;
+    cursor: pointer;
+    color: grey;
+    padding-left: 2px;
+}
+  
+.calificacion input[type="radio"] {
+    display: none;
+}
+  
+.calificacion 
+label:hover,
+label:hover ~ label {
+    color: orange;
+}
+  
+.calificacion input[type="radio"]:checked ~ label {
+    color: orange;
+}
