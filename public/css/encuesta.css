@@ -141,3 +141,24 @@
 .container-buttons{
     margin-left: 20%;
 }
+
+.error{
+    margin: 0 auto;
+    display: block;
+    width: 146px;
+    font-size: 13px;
+    color: red;
+    margin-left: 6%;
+}
+
+.error-nombre{
+    float: left;
+}
+
+.error-apellido {
+    margin-left: 52%;
+}
+
+.ocultar-error {
+    display: none;
+}
