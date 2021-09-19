@@ -94,3 +94,14 @@ formulario.addEventListener('click', function(event) {
     alert(values);
     event.preventDefault();
 });
+
+const limpiar = document.getElementById('limpiar');
+limpiar.addEventListener('click', function(event) {
+    nombre.value = '';
+    apellido.value = '';
+    fecha.value = ''
+    sexo.value = 'Sexo';
+    email.value = '';
+    valoracion.value = 'Valoracion';
+    event.preventDefault();
+});
