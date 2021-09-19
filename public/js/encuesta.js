@@ -1,9 +1,12 @@
 const patternLetters = new RegExp('^[A-Z]+$', 'i');
-const patterDate = new RegExp('^([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0]?[1-9]|[1][0-2])[./-]([0-9]{4}|[0-9]{2})$');
+const patternDate = new RegExp('^([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0]?[1-9]|[1][0-2])[./-]([0-9]{4}|[0-9]{2})$');
+const patternEmail = new RegExp('^[^\s@]+@[^\s@]+\.[^\s@]{2,}$');
 
 const nombre = document.getElementById('nombre');
 const apellido = document.getElementById('apellido');
 const fecha = document.getElementById('fechaNac');
+const sexo = document.getElementById('sexo');
+const email = document.getElementById('email');
 
 nombre.addEventListener('blur', function(event) {
     let errorNombre = document.getElementById('error-nombre');
@@ -37,15 +40,39 @@ apellido.addEventListener('blur', function(event) {
 
 fecha.addEventListener('blur', function(event) {
     let errorFecha = document.getElementById('error-fecha');
-    let errorRequerido = document.getElementById('fecha-requerida');
+    let fechaRequerida = document.getElementById('fecha-requerida');
     if(fecha.value === ''){
-        errorRequerido.classList.remove('ocultar-error');
+        fechaRequerida.classList.remove('ocultar-error');
         errorFecha.classList.add('ocultar-error');
-    } else if(!patterDate.test(fecha.value)){
+    } else if(!patternDate.test(fecha.value)){
         errorFecha.classList.remove('ocultar-error');
-        errorRequerido.classList.add('ocultar-error');
+        fechaRequerida.classList.add('ocultar-error');
     } else {
         errorFecha.classList.add('ocultar-error');
-        errorRequerido.classList.add('ocultar-error')
+        fechaRequerida.classList.add('ocultar-error')
+    }
+});
+
+sexo.addEventListener('blur', function(event) {
+    let sexoRequerido = document.getElementById('sexo-requerido');
+    if(sexo.value === 'Sexo'){
+        sexoRequerido.classList.remove('ocultar-error');
+    } else {
+        sexoRequerido.classList.add('ocultar-error');
+    }
+});
+
+email.addEventListener('blur', function(event) {
+    let errorEmail = document.getElementById('error-email');
+    let emailRequerido = document.getElementById('email-requerido');
+    if(email.value === ''){
+        emailRequerido.classList.remove('ocultar-error');
+        errorEmail.classList.add('ocultar-error');
+    } else if(!patternEmail.test(email.value)){
+        errorEmail.classList.remove('ocultar-error');
+        emailRequerido.classList.add('ocultar-error');
+    } else {
+        errorEmail.classList.add('ocultar-error');
+        emailRequerido.classList.add('ocultar-error');
     }
 });
