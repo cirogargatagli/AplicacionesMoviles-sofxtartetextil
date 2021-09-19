@@ -85,3 +85,12 @@ valoracion.addEventListener('blur', function(event) {
         valoracionRequerido.classList.add('ocultar-error');
     }
 });
+
+const formulario = document.getElementById('formulario');
+formulario.addEventListener('click', function(event) {
+    let values = nombre.value + '\n' + apellido.value + '\n' + 
+        fecha.value + '\n' + sexo.value + '\n' + 
+        email.value + '\n' + valoracion.value;
+    alert(values);
+    event.preventDefault();
+});
