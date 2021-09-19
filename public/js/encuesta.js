@@ -3,11 +3,6 @@ const patternDate = new RegExp('^([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0]?[1-9]|
 const patternEmail = new RegExp('^[^\s@]+@[^\s@]+\.[^\s@]{2,}$');
 
 const nombre = document.getElementById('nombre');
-const apellido = document.getElementById('apellido');
-const fecha = document.getElementById('fechaNac');
-const sexo = document.getElementById('sexo');
-const email = document.getElementById('email');
-
 nombre.addEventListener('blur', function(event) {
     let errorNombre = document.getElementById('error-nombre');
     let nombreRequerido = document.getElementById('nombre-requerido');
@@ -23,6 +18,7 @@ nombre.addEventListener('blur', function(event) {
     }
 });
 
+const apellido = document.getElementById('apellido');
 apellido.addEventListener('blur', function(event) {
     let errorApellido = document.getElementById('error-apellido');
     let apellidoRequerido = document.getElementById('apellido-requerido');
@@ -38,6 +34,7 @@ apellido.addEventListener('blur', function(event) {
     }
 });
 
+const fecha = document.getElementById('fechaNac');
 fecha.addEventListener('blur', function(event) {
     let errorFecha = document.getElementById('error-fecha');
     let fechaRequerida = document.getElementById('fecha-requerida');
@@ -53,6 +50,7 @@ fecha.addEventListener('blur', function(event) {
     }
 });
 
+const sexo = document.getElementById('sexo');
 sexo.addEventListener('blur', function(event) {
     let sexoRequerido = document.getElementById('sexo-requerido');
     if(sexo.value === 'Sexo'){
@@ -62,6 +60,7 @@ sexo.addEventListener('blur', function(event) {
     }
 });
 
+const email = document.getElementById('email');
 email.addEventListener('blur', function(event) {
     let errorEmail = document.getElementById('error-email');
     let emailRequerido = document.getElementById('email-requerido');
@@ -74,5 +73,15 @@ email.addEventListener('blur', function(event) {
     } else {
         errorEmail.classList.add('ocultar-error');
         emailRequerido.classList.add('ocultar-error');
+    }
+});
+
+const valoracion = document.getElementById('valoracion');
+valoracion.addEventListener('blur', function(event) {
+    let valoracionRequerido = document.getElementById('valoracion-requerida');
+    if(valoracion.value === 'Valoracion'){
+        valoracionRequerido.classList.remove('ocultar-error');
+    } else {
+        valoracionRequerido.classList.add('ocultar-error');
     }
 });

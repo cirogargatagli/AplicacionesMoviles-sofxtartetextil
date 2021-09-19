@@ -111,29 +111,25 @@
     bottom: 0;
     width: 100%;
  }
-
- .valoracion{
-    margin-top: 10px;
- }
  
 .container-comentario{
     height: 150px;
 }
 
- .comentario-encuesta{
+.comentario-encuesta{
     margin: auto;
     width: 100%;
     margin-left: 6%;
     margin-top: 5%;
  }
 
- .comentario-encuesta textarea{
+.comentario-encuesta textarea{
     border-radius: 7px;
     border: 1px solid #b1afaf;
     width: 90%;
  }
 
- .comentario-encuesta textarea:focus{
+.comentario-encuesta textarea:focus{
      border: none;
     border: 2px solid rgb(223, 5, 5);
 }
