@@ -86,15 +86,6 @@ valoracion.addEventListener('blur', function(event) {
     }
 });
 
-const formulario = document.getElementById('formulario');
-formulario.addEventListener('click', function(event) {
-    let values = nombre.value + '\n' + apellido.value + '\n' + 
-        fecha.value + '\n' + sexo.value + '\n' + 
-        email.value + '\n' + valoracion.value;
-    alert(values);
-    event.preventDefault();
-});
-
 const limpiar = document.getElementById('limpiar');
 limpiar.addEventListener('click', function(event) {
     nombre.value = '';
@@ -103,5 +94,24 @@ limpiar.addEventListener('click', function(event) {
     sexo.value = 'Sexo';
     email.value = '';
     valoracion.value = 'Valoracion';
+    event.preventDefault();
+});
+
+const cancelar = document.getElementById('cancelar');
+cancelar.addEventListener('click', function(event) {
+    let respuesta = confirm('¿Desea volver a la página anterior?');
+    if (respuesta) {
+        history.back();
+    } else {
+        return;
+    }
+});
+
+const formulario = document.getElementById('formulario');
+formulario.addEventListener('click', function(event) {
+    let values = nombre.value + '\n' + apellido.value + '\n' + 
+        fecha.value + '\n' + sexo.value + '\n' + 
+        email.value + '\n' + valoracion.value;
+    alert(values);
     event.preventDefault();
 });
