@@ -93,7 +93,8 @@
                             </select>
                         </div>
                     </div>
-                    <p class="error error-izquierdo ocultar-error" id="error-fecha">Formato de fecha inválido (dd-mm-yyy)</p>
+                    <p class="error error-izquierdo ocultar-error" id="error-fecha">Formato de fecha inválido
+                        (dd-mm-yyy)</p>
                     <p class="error error-izquierdo ocultar-error" id="fecha-requerida">Este campo es obligatorio</p>
                     <p class="error error-derecho ocultar-error" id="sexo-requerido">Este campo es obligatorio</p>
                     <div class="line-encuesta">
@@ -104,7 +105,7 @@
                             </label>
                         </div>
                         <div class="item-encuesta select-encuesta"">
-                            <select name="valoracion" id="valoracion">
+                            <select name=" valoracion" id="valoracion">
                             <option selected="true" disabled="disabled">Valoracion</option>
                             <option value="lamentable">Lamentable</option>
                             <option value="mala">Mala</option>
@@ -127,13 +128,14 @@
                         <div class="buttons">
                             <button class="button" id="limpiar">Limpiar</button>
                             <button class="button" id="cancelar">Cancelar</button>
-                            <button type="submit" form="form-encuesta" value="submit" class="button"id="formulario">Enviar</button>
+                            <button type="submit" form="form-encuesta" class="button" id="formulario" formnovalidate
+                                disabled>
+                                Enviar
+                            </button>
                         </div>
                     </div>
                 </form>
-
             </section>
-
         </div>
     </main>
 
@@ -155,7 +157,7 @@
         </div>
 
     </footer>
-    <script src="../js/encuesta.js"></script>
+    <script type="module" src="../js/encuesta.js"></script>
 </body>
 
 </html>
