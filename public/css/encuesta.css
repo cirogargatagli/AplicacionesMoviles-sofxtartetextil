@@ -19,6 +19,11 @@
     margin-left: 1%;
 }
 
+#formulario:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+
 .encuesta{
     margin-bottom: 20px;
     margin-left: 15px;
