@@ -174,6 +174,10 @@ main {
     height: 250px;
 }
 
+.imagen-opaca {
+    opacity: 0.5;
+}
+
 .descripcion {
     font-size: 23px;
     text-align: center;
