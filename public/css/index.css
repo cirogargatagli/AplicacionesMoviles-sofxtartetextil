@@ -65,8 +65,8 @@ header {
 
 .carrito {
     margin-left: 20%;
-    font-size: 20px;
-    color: rgb(110, 110, 110);
+    font-size: 25px;
+    color: rgb(223, 5, 5);
 }
 
 .menu {
@@ -175,7 +175,7 @@ main {
 }
 
 .imagen-opaca {
-    opacity: 0.5;
+    opacity: 0.65;
 }
 
 .descripcion {
@@ -206,6 +206,7 @@ footer {
     text-decoration: none;
     color: rgb(5, 154, 223);
     padding-left: 0.2%;
+    padding-right: 0.2%;
 }
 
 .contacto{
@@ -221,29 +222,4 @@ footer {
     height: 100%;
     width: 30px;
     margin-left: 15%;
-}
-
-.calificacion {
-    width: 45%;
-    direction: rtl;
-}  
-.calificacion label {    
-    font-size: 22px;
-    cursor: pointer;
-    color: grey;
-    padding-left: 2px;
-}
-  
-.calificacion input[type="radio"] {
-    display: none;
-}
-  
-.calificacion 
-label:hover,
-label:hover ~ label {
-    color: orange;
-}
-  
-.calificacion input[type="radio"]:checked ~ label {
-    color: orange;
 }
