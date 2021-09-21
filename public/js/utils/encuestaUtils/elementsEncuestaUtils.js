@@ -5,6 +5,7 @@ export const fecha = document.getElementById('fechaNac');
 export const sexo = document.getElementById('sexo');
 export const email = document.getElementById('email');
 export const valoracion = document.getElementById('valoracion');
+export const comentario = document.getElementById('comentario')
 export const arrayEncuesta = [nombre, apellido, fecha, sexo, email, valoracion]
 
 //Botones 

@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- jQuery-->
     <script src="../js/jquery-3.6.0.min.js"></script>
@@ -27,7 +28,7 @@
             <img src="../img/titulo.jpeg" class="imagen-titulo">
         </div>
         <div class="compra">
-            <p class="cantidad-carrito"></p>
+            <p class="cantidad-carrito" id="carrito"></p>
             <i class="fas fa-shopping-cart carrito"></i>
         </div>
     </header>
@@ -64,17 +65,17 @@
             <section class="section" id="Home">
                 <h3>Destacados</h3>
                 <div class="articulos">
-                    <div class="articulo">
+                    <div class="articulo" id="1">
                         <img src="../img/articulos/Indumentaria/blanca-treat.jpeg" alt="Remera blanca Treat">
                         <p class="descripcion">Remera blanca Treat</p>
                         <p class="precio">$800</p>
                     </div>
-                    <div class="articulo">
+                    <div class="articulo" id="2">
                         <img src="../img/articulos/GORRAS/piluso-fuego.jpeg" alt="Piluso fuego">
                         <p class="descripcion">Piluso fuego</p>
                         <p class="precio">$2000</p>
                     </div>
-                    <div class="articulo">
+                    <div class="articulo" id="3">
                         <img src="../img/articulos/Barbijos/barbijo-jean-flor.jpeg" alt="Barbijo jean flor">
                         <p class="descripcion">Barbijo jean flor</p>
                         <p class="precio">$400</p>
@@ -102,7 +103,7 @@
         </div>
 
     </footer>
-    <script src="../js/carrito.js"></script>
+    <script type="module" src="../js/home.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,35 @@
-import { nombre, apellido, fecha, sexo, email, valoracion, arrayEncuesta, limpiar, cancelar, enviar, formulario } from './utils/encuestaUtils/elementsEncuestaUtils.js'
+import { nombre, apellido, fecha, sexo, email, valoracion, comentario, arrayEncuesta, limpiar, cancelar, enviar, formulario } from './utils/encuestaUtils/elementsEncuestaUtils.js'
 import { patternLetters, patternDate, patternEmail } from './utils/patternsUtils.js'
 import { nombreValido, apellidoValido, fechaValida, sexoValido, emailValido, valoracionValida } from './utils/encuestaUtils/validatorEncuestaUtils.js'
+
+const limpiar = () => {
+    nombre.value = '';
+    apellido.value = '';
+    fecha.value = ''
+    sexo.value = 'Sexo';
+    email.value = '';
+    valoracion.value = 'Valoracion';
+    comentario.value = '';
+}
+
+const printEncuesta = () => {
+    let encuesta = {
+        nombre: "Nombre: " + nombre.value,
+        apellido: "Apellido: " + apellido.value,
+        fecha: "Fecha: " + fecha.value,
+        sexo: "Sexo: " + sexo.value,
+        email: "Email: " + email.value,
+        valoracion: "Valoración: " + valoracion.value,
+        comentario: !comentario.value ? "" : "Comentario: " + comentario.value
+    }
+
+    let response = encuesta.nombre + "\n" + encuesta.apellido + "\n" +
+        encuesta.fecha + "\n" + encuesta.sexo + "\n" +
+        encuesta.email + "\n" + encuesta.valoracion + "\n" + encuesta.comentario
+
+    alert(response);
+    limpiar();
+}
 
 var inputs = document.querySelectorAll("input");
 inputs.forEach(input => {
@@ -11,7 +40,6 @@ inputs.forEach(input => {
     });
 })
 
-//Activar boton Enviar si todos los campos son válidos
 arrayEncuesta.forEach(input => {
     input.addEventListener("change", e => {
         if (
@@ -112,12 +140,7 @@ valoracion.addEventListener('blur', function (event) {
 
 limpiar.addEventListener('click', function (event) {
     event.preventDefault();
-    nombre.value = '';
-    apellido.value = '';
-    fecha.value = ''
-    sexo.value = 'Sexo';
-    email.value = '';
-    valoracion.value = 'Valoracion';
+    limpiar();
 });
 
 
@@ -142,10 +165,7 @@ formulario.addEventListener('submit', function (e) {
         emailValido() &&
         valoracionValida()
     ) {
-        let values = nombre.value + '\n' + apellido.value + '\n' +
-            fecha.value + '\n' + sexo.value + '\n' +
-            email.value + '\n' + valoracion.value;
-        alert(values);
+        printEncuesta();
     }
     else {
         alert("Se deben completar todos los campos correctamente");
