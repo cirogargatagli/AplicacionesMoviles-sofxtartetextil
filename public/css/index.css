@@ -60,11 +60,12 @@ header {
 }
 
 .cantidad-carrito {
+    margin-right: 2%;
     font-size: 20px;
 }
 
 .carrito {
-    margin-left: 20%;
+    margin-left: 5%;
     font-size: 25px;
     color: rgb(223, 5, 5);
 }
