@@ -14,13 +14,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- jQuery-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html" class="logo-header"><img src="../img/logo.png" alt="Logo" class="imagen-logo"></a>
-        <img src="../img/titulo.jpeg" class="imagen-titulo">
-        <!--<h1>SOFXT</h1>-->
+        <div class="logo">
+            <a href="index.html" class="logo-header"><img src="../img/logo.png" alt="Logo" class="imagen-logo"></a>
+            <img src="../img/titulo.jpeg" class="imagen-titulo">
+        </div>
+        <div class="compra">
+            <p class="cantidad-carrito"></p>
+            <i class="fas fa-shopping-cart carrito"></i>
+        </div>
     </header>
 
     <nav class="menu">
@@ -93,6 +102,7 @@
         </div>
 
     </footer>
+    <script src="../js/carrito.js"></script>
 </body>
 
 </html>
