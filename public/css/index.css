@@ -19,7 +19,7 @@ a {
 header {
     width: 100%;
     height: 85px;
-    box-shadow: 0px 1px 5px 1px rgb(110, 110, 110);
+    box-shadow: 0px 1px 4px 1px rgb(110, 110, 110);
     background-color: white;
 }
 
@@ -70,41 +70,42 @@ header {
 }
 
 .menu {
-    float: left;
-    height: 100%;
-    width: 14%;
-    margin-top: 0.6%;
-}
-
-.item-menu{
+    display: flex;
+    height: 50px;
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
-.item-menu-enlace{
-    font-family: 'Roboto';
-    display: block;
-    width: 85%;
-    font-weight: bolder;
-    color: black;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15%;
-    font-size: 20px;
+.item-menu {
+    height: 100%;
+    width: 12.5%;
+    border-bottom: gray 1px solid;
+    border-right: gray 1px solid;
     transition: all 100ms;
 }
 
-.item-menu-enlace:hover{
+.item-menu:first-child {
+    border-left: gray 1px solid;
+}
+
+.item-menu:hover{
     font-size: 1.3rem;
     background-color: rgba(0, 0, 0, 0.03);
 }
 
-main {  
+.item-menu-enlace {
+    display: block;
+    line-height: 50px;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;  
     min-height: 80vh;
-    margin-right: 1%;
-    float: right;
-    width: 85%;
+    width: 80%;
     height: 100%;
     margin-bottom: 1.5%;
     border-radius: 1%;
@@ -120,7 +121,6 @@ main {
 .section{
     font-family: 'Roboto';
     width: 98%;
-    margin-top: 2%;
     margin-left: 1%;
 }
 
