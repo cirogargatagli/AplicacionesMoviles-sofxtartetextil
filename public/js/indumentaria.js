@@ -14,7 +14,7 @@ getArticulos()
 
             img.src = articulo.img;
             descripcion.innerHTML = articulo.descripcion;
-            precio.innerHTML = precio.innerHTML;
+            precio.innerHTML = articulo.precio;
 
             divArticulo.append(img, descripcion, precio)
             divArticulos.append(divArticulo)
